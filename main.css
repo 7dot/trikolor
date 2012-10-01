@@ -1,0 +1,65 @@
+body {
+  font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+  font-size: 0.75em;
+}
+
+#pane-actions {
+  padding: 0px !important;
+  border: 0px !important;
+}
+
+.logo {
+  background-color: #F7941D;
+  height: 30px;
+  font-weight: bold;
+  padding: 5px;
+}
+.logo b { 
+  font-size: 1.25em; 
+  font-weight: bold; 
+}
+
+.float-right {
+  float: right;
+}
+
+#control {
+  background-color: #F7941D;
+  height: 25px;
+  padding: 5px;
+}
+
+#tbl-icons th {
+  text-align: right !important;
+}
+
+#filters { width: 100%; }
+#filters .portlet { margin: 1px; }
+#filters .portlet-header { margin: 0px; padding-bottom: 1px; padding-left: 1px; border: 0; }
+#filters .portlet-header .ui-icon { float: right; }
+#filters .portlet-content { padding: 0.1em; }
+#filters .ui-sortable-placeholder { border: 3px dotted #F7941D !important; visibility: visible !important; height: 20px !important; }
+#filters .ui-sortable-placeholder * { visibility: hidden; }
+
+hr {
+  color: #DDDDDD;
+  background-color: #DDDDDD;
+  border: 0px none;
+  height: 1px;
+  clear: both;
+}
+
+pre {
+  font-family: "Trebuchet MS", "Helvetica", "Arial", "Verdana", "sans-serif";
+  font-size: 1em;
+}
+
+#result img { margin: 5px; float: left; }
+
+.ui-selected { background: #F7941D; }
+.img-selected { border: 3px solid #F7941D; }
+
+#img-button { position: absolute; display: none; }
+
+#progressbar { display : none; }
+.ui-progressbar .ui-progressbar-value { background-image: url(pbar-ani.gif); }

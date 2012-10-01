@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trikolor Editor</title>
+
+<link href="vendors/jqueryui/css/jquery-ui-1.8.22.custom.css" rel="stylesheet" type="text/css">
+<link href="main.css" rel="stylesheet" type="text/css">
+<link href="icons.css" rel="stylesheet" type="text/css">
+
+<script src="vendors/jquery-1.7.2.min.js"></script>
+<script src="vendors/jqueryui/js/jquery-ui-1.8.22.custom.min.js"></script>
+<script src="vendors/jquery.layout-latest.min.js"></script>
+<script src="vendors/jquery.json-2.3.min.js"></script>
+<script src="ui.js"></script>
+<script src="presets/presets.js"></script>
+<script src="plugins/plugins.js"></script>
+<script src="main.js"></script>
+
+</head>
+<body>
+
+<div class="ui-layout-west">
+
+  <div class="logo">
+    <b>Trikolor</b> 
+    <div class="float-right">
+      <button id="btn-help">Help</button>
+    </div>
+  </div>
+
+  <div id="pane-actions" class="ui-layout-content">
+    <div class="ui-layout-north">
+      <div>
+      <button id="btn-preset-new"></button>
+      <button id="btn-preset-save"></button>
+      Preset: 
+      <select id="preset" style="width: 150px;"></select>
+      <button id="btn-preset-options"></button>
+      <button id="btn-preset-delete"></button>
+      </div>
+      <div id="options" style="display: none;">
+        Name: <input id="preset_name" type="text"><br>
+        Configuration:<br> 
+        <textarea id="config" style="width: 100%"></textarea>
+      </div>
+    </div>
+    <div id="filters" class="ui-layout-center"></div>
+    <div class="ui-layout-south">
+      <table>
+        <tr>
+          <td>Source</td>
+          <td id="filters-icons-source"></td>
+        </tr>
+        <tr>
+          <td>Graphic</td>
+          <td id="filters-icons-graphics"></td>
+        </tr>
+        <tr>
+          <td>Control</td>
+          <td id="filters-icons-misc"></td>
+        </tr>
+      </table>
+    </div>  
+  </div>
+
+  <div id="control">
+       
+        <div style="float: right;">
+          <input id="checkbox-class" type="checkbox"><label for="checkbox-class"></label>
+        </div>
+        <div style="float: right; margin-right: 5px;">
+          <div style="width: 170px;">
+            <span class="ui-icon ui-icon-image" style="float: left"></span><div id="slider-display" style="float: right"></div>         
+           </div>
+          <div id="slider" style="top: 15px;"></div>
+        </div>
+
+        <div class="control">
+	  <button id="btn-control-play">play</button>
+	  <button id="btn-control-stop">stop</button>
+	  <button id="btn-control-prev">prev</button>
+	  <button id="btn-control-next">next</button>
+        </div>
+
+  </div>
+
+</div>
+
+<div id="result" class="ui-layout-center">
+  <div id="progressbar"></div>
+</div>
+
+<!-- windows & helpers -->
+<div id="dialog-help" title="Help" style="display: none;"></div>
+
+<div id="dialog-viewer" title="Viewer, navigate [&larr;] & [&rarr;]" style="display: none;"></div>
+
+<div id="img-button"><button id="img-button-delete">delete</button><input id="img-button-class" type="text" size="1" title="label" style="display: none;"></div>
+<!-- /windows & helpers -->
+
+</body>
+</html>

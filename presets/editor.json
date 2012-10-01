@@ -1,0 +1,1 @@
+{"name":"Pixel Editor","scale":48,"plugins":[{"path":"source/new","options":{"background":"rgb(255,255,255)","width":48,"height":48},"system":{"class_in":"*","class_out":"*","expand":true,"clone":false}},{"path":"graphics/editor","options":{"width_limit":50,"height_limit":50},"system":{"class_in":"*","class_out":"*","expand":true,"clone":false}}]}

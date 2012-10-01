@@ -1,5 +1,6 @@
 var presets = [
-"new",
+"trikolor2",
 "trikolor1",
-"trikolor2"
+"editor",
+"tricolor2google"
 ];

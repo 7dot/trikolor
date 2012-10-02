@@ -23,7 +23,7 @@ $('#btn-help')
 .click(function(){
   $( "#dialog-help" )
   .empty()
-  .append('<pre></pre>').children().load('readme.txt').end()
+  .append('<pre></pre>').children().load('readme.md').end()
   .dialog({
     height: 480,
     width: 640,

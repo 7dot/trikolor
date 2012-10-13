@@ -22,6 +22,7 @@ var plugins = [
  "graphics/halftone",
  "graphics/atkinson",
  "graphics/bayer",
+ "graphics/threshold",
  "graphics/set_colors",
  "graphics/set_colors_dith",
  "graphics/miniaturize",
